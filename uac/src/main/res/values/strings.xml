@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">TestUAC1</string>
+    <string name="start_button">开始</string>
+    <string name="stop_button">停止</string>
+    <string name="menu_settings">Setting</string>
+</resources>
