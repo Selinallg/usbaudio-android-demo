@@ -6,3 +6,5 @@ Device.
 
 Joel Stanley
 
+https://github.com/Selinallg/android_usbaudio
+
