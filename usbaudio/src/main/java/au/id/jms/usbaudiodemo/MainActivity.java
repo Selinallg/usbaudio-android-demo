@@ -4,7 +4,7 @@ package au.id.jms.usbaudiodemo;
 import java.util.HashMap;
 import java.util.Iterator;
 
-//import org.libusb.UsbHelper;
+import org.libusb.UsbHelper;
 
 import android.app.PendingIntent;
 import android.content.BroadcastReceiver;
@@ -16,11 +16,13 @@ import android.hardware.usb.UsbDevice;
 import android.hardware.usb.UsbInterface;
 import android.hardware.usb.UsbManager;
 import android.os.Bundle;
-import android.support.v4.app.FragmentActivity;
 import android.util.Log;
 import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
+
+import androidx.fragment.app.FragmentActivity;
+
 import au.id.jms.usbaudio.AudioPlayback;
 import au.id.jms.usbaudio.UsbAudio;
 
@@ -61,7 +63,7 @@ public class MainActivity extends FragmentActivity {
         
         // Load native lib
         System.loadLibrary("usb-1.0");
-//        UsbHelper.useContext(getApplicationContext());
+        UsbHelper.useContext(getApplicationContext());
         
     	mUsbAudio = new UsbAudio();
     	
