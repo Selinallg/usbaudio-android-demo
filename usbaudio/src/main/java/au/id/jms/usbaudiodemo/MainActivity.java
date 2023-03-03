@@ -37,8 +37,6 @@ public class MainActivity extends FragmentActivity {
     
     UsbAudio mUsbAudio = null;
 
-	Thread mUsbThread = null;
-
 	private UsbReciever mUsbPermissionReciever;
 
     @Override
